@@ -56,7 +56,7 @@ def hello():
 
 @app.route("/env", methods=['POST', 'GET'])
 def getinfo():
-    new_user = User('Ardavan', 'Sassani', 'a.sassani@gmail.com', '1234')
+    new_user = User('Ardavan', 'Sassani', 'a.sassani@gmail.com', '12345')
     # new_user = User(name='ardook',password='12345',fullname='ardookkhan', address='anjasf435')
     # session.add(new_user)
     # our_user = session.query(User).filter_by(name='ardook').first()
