@@ -1,34 +1,34 @@
-import os
+# import os
 
-import sqlalchemy
-from sqlalchemy import Column, Integer, Sequence, String, create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from models.user import User
+# import sqlalchemy
+# from sqlalchemy import Column, Integer, Sequence, String, create_engine
+# from sqlalchemy.ext.declarative import declarative_base
+# from sqlalchemy.orm import sessionmaker
+# from models.user import User
 
-print('---> Database imported')
+# print('---> Database imported')
 
-Base = declarative_base()
-tablename='default value'
-engine = create_engine(os.getenv('MYSQL_DSN'))
-Session = sessionmaker(bind=engine)
-session = Session()
-# base = Base
-
-
+# Base = declarative_base()
+# tablename='default value'
+# engine = create_engine(os.getenv('MYSQL_DSN'))
+# Session = sessionmaker(bind=engine)
+# session = Session()
+# # base = Base
 
 
-class Model(Base):
-	__tablename__ = 'tablename'
-	id = Column(Integer,Sequence('user_id_seq'), primary_key=True)
-	name = Column(String(15))
-	fullname = Column(String(15))
-	password = Column(String(15))
-	address = Column(String(15))
 
 
-print(User.persist[0].keys())
-print(User.persist[0].values())
+# class Model(Base):
+# 	__tablename__ = 'tablename'
+# 	id = Column(Integer,Sequence('user_id_seq'), primary_key=True)
+# 	name = Column(String(15))
+# 	fullname = Column(String(15))
+# 	password = Column(String(15))
+# 	address = Column(String(15))
+
+
+# print(User.persist[0].keys())
+# print(User.persist[0].values())
 # Base.metadata.create_all(engine)
 
 # def __init__(self, tablename):

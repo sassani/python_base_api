@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, Sequence, String, create_engine
+# from sqlalchemy import Column, Integer, Sequence, String, create_engine
 # from db.database import Database
 
 # class User(Base):

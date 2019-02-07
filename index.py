@@ -1,9 +1,4 @@
 from models.user import User
-# from models.project import Project
-# import sqlalchemy
-# from sqlalchemy.orm import sessionmaker
-# from sqlalchemy.ext.declarative import declarative_base
-# from sqlalchemy import create_engine, Column, Integer, String, Sequence
 from flask import Flask, jsonify, make_response, request
 import jwt
 import datetime
@@ -44,14 +39,14 @@ def home():
     ]})
 
 
-@app.route("/login")
-def hello():
-    token = {
-        'public_id': 'Ardavan',
-        'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
-    }
-    token = jwt.encode(token, SECRET_KEY, algorithm='HS256')
-    return jsonify(token=token.decode('UTF-8'))
+# @app.route("/login")
+# def hello():
+#     token = {
+#         'public_id': 'Ardavan',
+#         'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
+#     }
+#     token = jwt.encode(token, SECRET_KEY, algorithm='HS256')
+#     return jsonify(token=token.decode('UTF-8'))
 
 
 @app.route("/env", methods=['POST', 'GET'])
