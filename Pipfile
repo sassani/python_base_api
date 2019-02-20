@@ -5,12 +5,17 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
 flask = "*"
 jwt = "*"
 python-dotenv = "*"
 pylint = "*"
+flask-sqlalchemy = "*"
+mysql-connector-python = "*"
+passlib = "*"
+jsons = "*"
 
 [requires]
 python_version = "3.7"
