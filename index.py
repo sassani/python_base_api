@@ -4,16 +4,16 @@ from flask import Flask
 
 
 APP = Flask(__name__)
-app_setting_file = 'appSettings.json'
+APP_SETTINGS_FILE = 'appSettings.json'
 if APP.config['ENV'] == 'development':
-    app_setting_file = 'appSettings.dev.json'
+    APP_SETTINGS_FILE = 'appSettings.dev.json'
 
-APP_SETTINGS = json.load(open(app_setting_file))
+APP_SETTINGS = json.load(open(APP_SETTINGS_FILE))
 
 APP.config['SQLALCHEMY_DATABASE_URI'] = APP_SETTINGS['database']['mySqlDsn']
 APP.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
-# pylint: disable=unused-import, wrong-import-position
+# pylint: disable=unused-import, wrong-import-position, E0611
 import database.context
-import src.Controllers.routes
+import src.controllers.routes

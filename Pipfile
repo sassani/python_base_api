@@ -6,14 +6,16 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 autopep8 = "*"
+pylint-flask = "*"
 
 [packages]
 flask = "*"
-jwt = "*"
 pylint = "*"
 flask-sqlalchemy = "*"
 mysql-connector-python = "*"
 passlib = "*"
+jsons = "*"
+pyJwt = "*"
 
 [requires]
 python_version = "3.7"
