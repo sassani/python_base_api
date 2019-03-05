@@ -1,0 +1,11 @@
+
+*/.vscode
+.env
+*.db
+**/*__pycache__
+.vscode
+appSettings.json
+pylintrc
+passenger_wsgi.py
+*/public
+*/tmp
