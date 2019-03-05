@@ -9,7 +9,7 @@ from index import APP
 
 
 
-@APP.route('/')
+@APP.route('/api/')
 def home():
     """<params>:"""
     return jsonify({'url': [

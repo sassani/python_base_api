@@ -1,5 +1,5 @@
 # pylint: disable-msg=E0611
-from database.entities.user import User as UserDb
+from src.database.user import User as UserDb
 
 class User():
     def __init__(self, user_db: UserDb, current_login_id: int = None):

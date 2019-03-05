@@ -1,7 +1,7 @@
 """ DTO Models """
 import datetime
-from src.models.user import User
-from src.helpers.enums import LoginUserType
+from src.core.models.user import User
+from src.core.helpers.enums import LoginUserType
 
 # pylint: disable=invalid-name
 

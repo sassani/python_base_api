@@ -3,9 +3,9 @@ from functools import wraps
 
 from flask import g, request
 
-from src.controllers.responses import Error, response
-from src.services.auth_service import AuthService
-from src.helpers.error_handlers import ErrorHandlers as EH
+from src.core.controllers.responses import Error, response
+from src.core.services.auth_service import AuthService
+from src.core.helpers.error_handlers import ErrorHandlers as EH
 
 ERROR_CODE_A = '00'
 

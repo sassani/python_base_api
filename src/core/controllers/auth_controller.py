@@ -3,16 +3,16 @@ from flask import request, g
 
 from index import APP
 # from base_controller import error
-# from src.controllers.base_controller import error
-# from src.controllers.responses.response import response
-from src.controllers.responses import Error, response
-from src.models.dtos import LoginUserDto
-from src.models.user import User
-from src.services.client_service import ClientService
-from src.controllers.base_controller import authorized
-from src.services.auth_service import AuthService
-from src.helpers.enums import LoginUserType
-from src.helpers.error_handlers import ErrorHandlers as EH
+# from core.controllers.base_controller import error
+# from core.controllers.responses.response import response
+from src.core.controllers.responses import Error, response
+from src.core.models.dtos import LoginUserDto
+from src.core.models.user import User
+from src.core.services.client_service import ClientService
+from src.core.controllers.base_controller import authorized
+from src.core.services.auth_service import AuthService
+from src.core.helpers.enums import LoginUserType
+from src.core.helpers.error_handlers import ErrorHandlers as EH
 
 
 ERROR_CODE_A = '01'

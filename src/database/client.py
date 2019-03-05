@@ -1,7 +1,7 @@
 # pylint: disable=no-name-in-module, line-too-long
 """User entity"""
-from database.context import DB
-from src.helpers.enums import ApplicationType
+from src.database import DB
+from src.core.helpers.enums import ApplicationType
 
 
 class Client(DB.Model):

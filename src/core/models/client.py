@@ -1,4 +1,4 @@
-from database.entities.client import Client as ClientDb
+from src.database.client import Client as ClientDb
 
 
 class Client():

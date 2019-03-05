@@ -1,9 +1,9 @@
 # pylint: disable-msg=E0611
 """User entity"""
 
-from database.context import DB
-from src.models.client import Client
-from src.helpers.error_handlers import ErrorHandlers as EH
+from src.database import DB
+from src.core.models.client import Client
+from src.core.helpers.error_handlers import ErrorHandlers as EH
 
 
 class Login(DB.Model):

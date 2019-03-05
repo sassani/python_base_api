@@ -1,14 +1,14 @@
 # pylint: disable-msg=E0611, ungrouped-imports
 """ authentication and Authorization services"""
 
-import src.security.password_storage as ps
-from database.entities.user import User as UserDb
-from database.entities.login import Login as LoginDb
-from src.helpers.enums import LoginUserType
-from src.models.client import Client
-from src.models.dtos import AuthTokenDto, LoginUserDto
-from src.models.user import User
-from src.services.token_service import TokenService
+import src.core.security.password_storage as ps
+from src.database.entities.user import User as UserDb
+from src.database.entities.login import Login as LoginDb
+from src.core.helpers.enums import LoginUserType
+from src.core.models.client import Client
+from src.core.models.dtos import AuthTokenDto, LoginUserDto
+from src.core.models.user import User
+from src.core.services.token_service import TokenService
 
 
 class AuthService():

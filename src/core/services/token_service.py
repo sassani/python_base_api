@@ -3,11 +3,11 @@ import jsons
 import jwt
 
 from index import APP_SETTINGS
-from src.helpers.string_helpers import random_string
-from src.helpers.error_handlers import ErrorHandlers as EH
-from src.models.client import Client
-from src.models.dtos import AccessTokenDto, AuthTokenDto
-from src.models.user import User
+from src.core.helpers.string_helpers import random_string
+from src.core.helpers.error_handlers import ErrorHandlers as EH
+from src.core.models.client import Client
+from src.core.models.dtos import AccessTokenDto, AuthTokenDto
+from src.core.models.user import User
 
 
 class TokenService:

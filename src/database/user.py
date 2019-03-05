@@ -1,10 +1,11 @@
-# pylint: disable=no-name-in-module
+
 """User entity"""
-import src.security.password_storage as ps
-from database.context import DB
-from index import APP_SETTINGS
-from src.helpers.enums import Roles
-from src.helpers.string_helpers import random_string
+import src.core.security.password_storage as ps
+# from run import APP_SETTINGS
+from src.core.helpers.enums import Roles
+from src.core.helpers.string_helpers import random_string
+from src.database import DB
+
 
 
 class User(DB.Model):
@@ -20,14 +21,14 @@ class User(DB.Model):
     roles = DB.Column(DB.JSON)
 
 
-def seed():
+def seed(settings):
     """ return entity seeds"""
     super_admin = User(
         public_id=random_string(13),
-        first_name=APP_SETTINGS['supperAdmin']['firstName'],
-        last_name=APP_SETTINGS['supperAdmin']['lastName'],
-        email=APP_SETTINGS['supperAdmin']['email'],
-        password=ps.generate_password(APP_SETTINGS['supperAdmin']['password']),
+        first_name=settings['supperAdmin']['firstName'],
+        last_name=settings['supperAdmin']['lastName'],
+        email=settings['supperAdmin']['email'],
+        password=ps.generate_password(settings['supperAdmin']['password']),
         roles={Roles.SUPER_ADMIN.name:None, Roles.ADMIN.name:None},
         is_email_verified=True,
         is_active=True
