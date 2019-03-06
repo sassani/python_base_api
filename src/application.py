@@ -24,7 +24,8 @@ def create_app(settings):
     @app.route("/", methods=['GET'])
     def index():
         payload = {
-            'Application': settings
+            'baseUrl': 'ArdavanSassani.net',
+            'python version': '3.7'
         }
         return jsonify(payload)
 

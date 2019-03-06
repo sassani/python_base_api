@@ -17,6 +17,7 @@ passlib = "*"
 jsons = "*"
 pyJwt = "*"
 flask-migrate = "*"
+pymysql = "*"
 
 [requires]
 python_version = "3.7"

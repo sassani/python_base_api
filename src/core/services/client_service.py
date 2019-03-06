@@ -1,6 +1,6 @@
 from flask import request
 
-from src.database.entities.client import Client as ClientDb
+from src.database.client import Client as ClientDb
 from src.core.helpers.enums import ApplicationType
 from src.core.models.client import Client
 from src.core.models.dtos import LoginUserDto

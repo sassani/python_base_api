@@ -2,8 +2,8 @@
 """ authentication and Authorization services"""
 
 import src.core.security.password_storage as ps
-from src.database.entities.user import User as UserDb
-from src.database.entities.login import Login as LoginDb
+from src.database.user import User as UserDb
+from src.database.login import Login as LoginDb
 from src.core.helpers.enums import LoginUserType
 from src.core.models.client import Client
 from src.core.models.dtos import AuthTokenDto, LoginUserDto
