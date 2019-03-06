@@ -14,7 +14,8 @@ def home():
     """<params>:"""
     return jsonify({'url': [
         'login',
-        'home'
+        'home',
+        'test'
     ]})
 
 @APP.route("/env", methods=['POST', 'GET'])
