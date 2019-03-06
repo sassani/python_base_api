@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/ardavans/APPs_kaj_v1/
+    - /bin/cp index.py $DEPLOY_PATH
+    - /bin/cp passenger_wsgi.py $DEPLOY_PATH
+    - /bin/cp -r src $DEPLOY_PATH/src
