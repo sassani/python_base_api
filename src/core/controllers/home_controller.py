@@ -13,9 +13,9 @@ from index import APP
 def home():
     """<params>:"""
     return jsonify({'url': [
-        'login',
-        'home',
-        'test'
+        '/',
+        '/auth',
+        '/env'
     ]})
 
 @APP.route("/env", methods=['POST', 'GET'])
